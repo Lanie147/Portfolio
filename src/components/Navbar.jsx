@@ -28,7 +28,7 @@ export default function Navbar() {
     <div>
       <nav className="fixed left-0 right-0 z-50 md:top-4 lg:top-4">
         {/* {Desktop md and lg Menu} */}
-        <div className="mx-auto hidden  max-w-xl items-center justify-center rounded-full border border-white/30 py-2 backdrop-blur-lg md:flex lg:flex">
+        <div className="mx-auto hidden  max-w-2xl items-center justify-center rounded-full border border-white/30 p-4 backdrop-blur-lg md:flex lg:flex">
           <div className="flex items-center justify-between gap-6"></div>
           <div>
             <a href="/">
@@ -41,7 +41,7 @@ export default function Navbar() {
                 <li key={index}>
                   <a
                     href={item.href}
-                    className="text-sm hover:text-gray-300"
+                    className="text-sm hover:text-gray-300 hover:bg-white/10 px-2 py-1 rounded-md ease-in-out duration-200"
                     onClick={(e) => handleLinkClick(e, item.href)}
                   >
                     {item.label}
